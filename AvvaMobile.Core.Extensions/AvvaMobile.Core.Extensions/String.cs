@@ -202,5 +202,13 @@ namespace AvvaMobile.Core.Extensions
         {
             return Regex.Match(value, @"^\s*(3[01]|[12][0-9]|0?[1-9])\.(1[012]|0?[1-9])\.((?:19|20)\d{2})\s*$").Success;
         }
+        public static string FormatToIBAN(this string str)
+        {
+            if (string.IsNullOrEmpty(str))
+            {
+                return null;
+            }
+            return Regex.Replace(str, ".{4}", "$0 ").Trim();
+        }
     }
 }
