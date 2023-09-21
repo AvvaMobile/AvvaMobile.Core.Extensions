@@ -61,8 +61,8 @@ public static class Int
         return val.HasValue ? val.Value.ToString() : "--";
     }
     
-    public static decimal DivideSafely(this decimal Numerator, decimal Denominator)
+    public static decimal DivideSafely(this int Numerator, int Denominator)
     {
-        return (Denominator == 0) ? 0 : Numerator / Denominator;
+        return (Denominator == 0) ? 0 : (decimal)Numerator / (decimal)Denominator;
     }
 }
