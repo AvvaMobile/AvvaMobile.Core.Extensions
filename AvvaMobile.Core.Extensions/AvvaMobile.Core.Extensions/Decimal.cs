@@ -13,10 +13,10 @@ public static class Decimal
     {
         if (val == null)
         {
-            return "0 TL.";
+            return "0 TL";
         }
 
-        return val.Value.ToString("N2") + " TL.";
+        return val.Value.ToString("N2") + " TL";
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ public static class Decimal
     /// <returns></returns>
     public static string ToTL(this decimal val)
     {
-        return val.ToString("N2") + " TL.";
+        return val.ToString("N2") + " TL";
     }
 
     /// <summary>
