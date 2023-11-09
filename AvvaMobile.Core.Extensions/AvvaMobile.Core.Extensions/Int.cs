@@ -8,12 +8,12 @@ public static class Int
         {
             return "0 TL.";
         }
-        return val.Value.ToString("N0") + " TL.";
+        return val.Value.ToString("N0") + " TL";
     }
 
     public static string ToTL(this int val)
     {
-        return val.ToString("N0") + " TL.";
+        return val.ToString("N0") + " TL";
     }
 
     public static bool IsALLSelected(this int val)

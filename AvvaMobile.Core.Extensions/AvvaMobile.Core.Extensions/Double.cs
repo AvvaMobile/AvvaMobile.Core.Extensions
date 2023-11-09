@@ -13,7 +13,7 @@ namespace AvvaMobile.Core.Extensions
         {
             if (val == null)
             {
-                return "0 TL.";
+                return "0 TL";
             }
 
             return val.Value.ToString("N2");
