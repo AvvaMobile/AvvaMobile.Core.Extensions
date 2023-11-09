@@ -210,4 +210,18 @@ public static class StringExtension
         }
         return Regex.Replace(str, ".{4}", "$0 ").Trim();
     }
+    
+    public static string AddUrlParameter(this string url, string parameter)
+    {
+        if (url.IndexOf('?') > -1)
+        {
+            url = url + "&" + parameter;
+        }
+        else
+        {
+            url = url + "?" + parameter;
+        }
+        
+        return url;
+    }
 }
