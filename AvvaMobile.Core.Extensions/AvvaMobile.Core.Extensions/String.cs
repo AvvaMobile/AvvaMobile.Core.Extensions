@@ -185,7 +185,7 @@ public static class StringExtension
         
     public static string PrepareS3Url(this string imageUrl, string baseUrl, string bucketName)
     {
-        return string.IsNullOrEmpty(imageUrl) ? null : $"{baseUrl}{bucketName}{imageUrl}";
+        return string.IsNullOrEmpty(imageUrl) ? null : string.Format(baseUrl, bucketName, imageUrl);
     }
         
     public static string CreditCardMaskify(this string str)
