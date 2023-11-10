@@ -113,4 +113,14 @@ public static class Decimal
     {
         return (Denominator == 0) ? 0 : Numerator / Denominator;
     }
+    
+    public static string ToFacebookPrice(this decimal value)
+    {
+        return value.ToString("0.00").Replace(".", "").Replace(",", "");
+    }
+
+    public static decimal FromFacebookPriceToDecimal(this decimal value)
+    {
+        return Math.Floor(value * 100) / 100;
+    }
 }
