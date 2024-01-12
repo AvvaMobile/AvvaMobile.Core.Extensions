@@ -4,12 +4,14 @@ namespace AvvaMobile.Core.Extensions;
 
 public static class SelectListItemExtension
 {
+    [Obsolete("This method is obsolete. Use AddALLOption without parameter instead.")]
     public static List<SelectListItem> AddALLOption(this List<SelectListItem> list, string text)
     {
         list.Insert(0, new SelectListItem { Text = text, Value = "-1" });
         return list;
     }
 
+    [Obsolete("This method is obsolete. Use AddALLOption without parameter instead.")]
     public static List<SelectListItem> AddSELECTOption(this List<SelectListItem> list, string text)
     {
         list.Insert(0, new SelectListItem { Text = text, Value = string.Empty });
