@@ -20,6 +20,10 @@ public static class Int
     {
         return val.Equals(0);
     }
+    public static bool IsSelectSelected(this int val)
+    {
+        return val.Equals(-1);
+    }
 
     /// <summary>
     /// Returns 0 if object is null, otherwise returns value of the object.
