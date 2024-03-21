@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Globalization;
+﻿using System.Globalization;
 
 namespace AvvaMobile.Core.Extensions
 {

@@ -13,7 +13,7 @@
 		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
 		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
 		<EnableNETAnalyzers>False</EnableNETAnalyzers>
-		<Version>1.0.14</Version>
+		<Version>1.0.15</Version>
 		<PackageIcon>avvamobile.png</PackageIcon>
 		<Description>This package is build for Avva Mobile developers to make their solutions easy to develop.</Description>
 		<Copyright>Avva Mobile Enterprise Solutions</Copyright>
@@ -25,8 +25,7 @@
 		</None>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Microsoft.AspNet.Mvc" Version="5.3.0" />
-		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Update="avvamobile.png">
