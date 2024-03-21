@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using System.Web.Mvc;
 
 namespace AvvaMobile.Core.Extensions;
 
@@ -8,13 +8,13 @@ public static class SelectListItemExtension
     {
         list.Insert(0, new SelectListItem { Text = text, Value = "0" });
         return list;
-    }        
+    }
     public static List<SelectListItem> AddALLOption(this List<SelectListItem> list)
     {
         list.Insert(0, new SelectListItem { Text = "-- Tümü --", Value = "0" });
         return list;
     }
-   
+
     public static List<SelectListItem> AddSELECTOption(this List<SelectListItem> list, string text)
     {
         list.Insert(0, new SelectListItem { Text = text, Value = "-1" });
